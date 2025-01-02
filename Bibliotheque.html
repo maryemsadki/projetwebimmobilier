@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Web</title>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-contenu">
+                <ul class="header-top-items">
+                    <li class="headder-top-item"><a href="">Contact</a></li>
+                    <li class="headder-top-item"><a href="">Support</a></li>
+                    <li class="headder-top-item"><a href="">Commentaire</a></li>
+                </ul>
+                <ul class="header-top-items">
+                    <li class="headder-top-item"> 
+                        <i class="las la-phone"></i>
+                        <span>+21627471285</span>
+                    </li>
+                    <li class="headder-top-item"> 
+                        <i class="las la-envelope"></i>
+                        <span>+maryemsadki22@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav-contenu">
+                <div class="nav-items" >
+                    <div class="nav-item-logo">
+                        <a href="">Logo</a>
+                    </div>
+                    <nav>
+                    <ul class="nav-items-lists">
+                        <li class="nav-items-list">
+                            <div class="dropdown">
+                                <span class="dropdown-text">Accueil</span><i class="las la-angle-down"></i>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Nouveaute.html">Nouveauté</a></li>
+                                    <li><a href="iconique.html">iconiques</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-items-list">
+                            <div class="dropdown">
+                                <span class="dropdown-text">Catégories</span><i class="las la-angle-down"></i>
+                                <ul class="dropdown-menu">
+                                    <li><a href="decoration.html">décoration</a></li>
+                                    <li><a href="rangement.html">rangement</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-items-list">
+                            <div class="dropdown">
+                                <span class="dropdown-text">Notre univers</span><i class="las la-angle-down"></i>
+                                <ul class="dropdown-menu">
+                                    <li class="us"><a href="nous.html">à propos de nous</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-items-list">
+                            <div class="dropdown">
+                            <span class="dropdown-text">Aide et Service</span><i class="las la-angle-down"></i>
+                            <ul class="dropdown-menu">
+                                <li class="us"><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+                <div class="nav-icons">
+                    <input type="text" placeholder="Recherche...">
+                    <button class="btnLogin-popup">
+                            <i class="las la-sign-in-alt"></i>
+                            <span>Connexions</span>
+                        </a>
+                    </button>
+                    <a href="panier.html">
+                        <i class="las la-shopping-cart"></i>
+                    </a>
+                    <button>
+                        <i class="las la-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+<main>
+    <section class="product-detail">
+        <div class="product-image">
+            <img src="Relooking Bibliotheque.jpg" alt="Art De Bougie">
+        </div>
+        <div class="product-info">
+            <h1>Relooking Bibliotheque</h1>
+            <p class="price">45DT</p>
+            <p class="description">
+                Donnez une nouvelle vie à votre bibliothèque avec notre service de relooking. 
+                Que vous souhaitiez moderniser son style, ajouter des touches décoratives ou améliorer son agencement, 
+                nous vous offrons des solutions sur mesure pour transformer votre espace. 
+                Redonnez à votre bibliothèque une allure moderne et fonctionnelle, parfaitement adaptée à vos envies et à votre intérie
+            <div class="number-input">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                <input class="quantity" min="0" name="quantity" value="1" type="number">
+                 <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+            </div>
+            <button class="buy-button">Acheter maintenant</button>
+        </div>
+    </section>
+
+    <section class="related-products">
+        <div class="related-items">
+            <div class="item">
+                <img src="Décoration Murale Salle À Manger.jpg" alt="Related product 1">
+            </div>
+            <div class="item">
+                <img src="Wopigh Arbres Lumineux LED, Illuminated Murale Interieur Vine Décoration,8 modes lumières des arbres,72 LEDs branchées en vigne éclairée pour coin mural, chambre à coucher(1 paquet).jpg " alt="Related product 2">
+            </div>
+            <div class="item">
+                <img src="Art De Bougie.jpg" alt="Related product 3">
+            </div>
+        </div>
+    </section>
+    <section class="section-ban3-2">
+        <div class="section-ban3-title">
+            <h3>Produit Apparentés</h3>
+        </div>
+        <div class="section-ban3-items">
+            
+            <a href="decorationmurale.html" class="section-ban3-item">
+                <div class="section-ban3-item-img">
+                    <img src="Décoration Murale Salle À Manger.jpg">
+                </div>
+                <div class="section-ban3-item-descrip">
+                <div class="section-ban3-item-descrip-commentr">
+                    <div>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <span class="section-ban3-item-descrip-commentr-text">Commentaires(2)</span>
+                </div>
+                <h4 class="section-ban3-item-descrip-title">Décoration Murale Salle À Manger</h4>
+                <span class="section-ban3-item-descrip-price">60DT</span>
+            </div>
+            </a>
+            <a href="arbrelumineux.html" class="section-ban3-item">
+                <div class="section-ban3-item-img">
+                    <img src="Wopigh Arbres Lumineux LED, Illuminated Murale Interieur Vine Décoration,8 modes lumières des arbres,72 LEDs branchées en vigne éclairée pour coin mural, chambre à coucher(1 paquet).jpg ">
+                </div>
+                <div class="section-ban3-item-descrip">
+                <div class="section-ban3-item-descrip-commentr">
+                    <div>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <span class="section-ban3-item-descrip-commentr-text">Commentaires(0)</span>
+                </div>
+                <h4 class="section-ban3-item-descrip-title">Arbre Lumineux</h4>
+                <span class="section-ban3-item-descrip-price">45DT</span>
+            </div>
+            </a>
+            <a href="Art De Bougie.jpg" class="section-ban3-item">
+                <div class="section-ban3-item-img">
+                    <img src="Art De Bougie.jpg">
+                </div>
+                <div class="section-ban3-item-descrip">
+                <div class="section-ban3-item-descrip-commentr">
+                    <div>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <span class="section-ban3-item-descrip-commentr-text">Commentaires(1)</span>
+                </div>
+                <h4 class="section-ban3-item-descrip-title">Art De Bougie</h4>
+                <span class="section-ban3-item-descrip-price">37DT</span>
+            </div>
+            </a>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-contenu">
+      <div class="footer-section">
+        <h4>Suivez-nous:</h4>
+        <div class="social-links">
+          <a href="#"><i class="lab la-instagram"></i>Instagram</a>
+          <a href="#"><i class="lab la-facebook"></i>Facebook</a>
+          <a href="#"><i class="lab la-twitter"></i>twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Décor Maison. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
