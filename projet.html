@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Web</title>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-contenu">
+                <ul class="header-top-items">
+                    <li class="headder-top-item"><a href="">Contact</a></li>
+                    <li class="headder-top-item"><a href="">Support</a></li>
+                    <li class="headder-top-item"><a href="">Commentaire</a></li>
+                </ul>
+                <ul class="header-top-items">
+                    <li class="headder-top-item"> 
+                        <i class="las la-phone"></i>
+                        <span>+21627471285</span>
+                    </li>
+                    <li class="headder-top-item"> 
+                        <i class="las la-envelope"></i>
+                        <span>+maryemsadki22@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav-contenu">
+                <div class="nav-items" >
+                    <div class="nav-item-logo">
+                        <a href="">Logo</a>
+                    </div>
+                    <nav>
+                    <ul class="nav-items-lists">
+                        <li class="nav-items-list">
+                            <div class="dropdown">
+                                <span class="dropdown-text">Accueil</span><i class="las la-angle-down"></i>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Nouveaute.html">Nouveauté</a></li>
+                                    <li><a href="iconique.html">iconiques</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-items-list">
+                            <div class="dropdown">
+                                <span class="dropdown-text">Catégories</span><i class="las la-angle-down"></i>
+                                <ul class="dropdown-menu">
+                                    <li><a href="decoration.html">décoration</a></li>
+                                    <li><a href="rangement.html">rangement</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-items-list">
+                            <div class="dropdown">
+                                <span class="dropdown-text">Notre univers</span><i class="las la-angle-down"></i>
+                                <ul class="dropdown-menu">
+                                    <li class="us"><a href="nous.html">à propos de nous</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-items-list">
+                            <div class="dropdown">
+                            <span class="dropdown-text">Aide et Service</span><i class="las la-angle-down"></i>
+                            <ul class="dropdown-menu">
+                                <li class="us"><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+                <div class="nav-icons">
+                    <input type="text" placeholder="Recherche...">
+                    <button class="btnLogin-popup">
+                            <i class="las la-sign-in-alt"></i>
+                            <span>Connexions</span>
+                        </a>
+                    </button>
+                    <a href="panier.html">
+                        <i class="las la-shopping-cart"></i>
+                    </a>
+                    <button>
+                        <i class="las la-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper" style="display: none;">
+        <span class="icon-close">
+            <i>x</i>
+        </span>
+        <!-- Formulaire de connexion -->
+        <div class="form-box login">
+            <h2>Connexion</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="las la-envelope"></i>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="las la-lock"></i>
+                    </span>
+                    <input type="password" required>
+                    <label>Mot de passe</label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">Se souvenir de moi
+                    </label>
+                    <a href="#">Mot de passe oublié</a>
+                </div>
+                <button type="submit" class="btn">Connexion</button>
+                <div class="login-register">
+                    <p>Vous n'avez pas de compte ? <a href="#" id="show-register">S'inscrire</a></p>
+                </div>
+            </form>
+        </div>
+        <!-- Formulaire d'enregistrement -->
+        <div class="form-box register">
+            <h2>S'inscrire</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="text" required>
+                    <label>Nom d'utilisateur</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="las la-envelope"></i>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="las la-lock"></i>
+                    </span>
+                    <input type="password" required>
+                    <label>Mot de passe</label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">J'accepte les termes et conditions
+                    </label>
+                </div>
+                <button type="submit" class="btn">S'inscrire</button>
+                <div class="login-register">
+                    <p>Vous avez déjà un compte ? <a href="#" id="show-login">Connexion</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>    
+    <main>
+        <section class="banner">
+            <div class="banner-bg-color">
+                <div class="banner-items">
+                    <div class="banner-item-number" >
+                       <span>01</span> 
+                    </div>
+                    <div class="banner-item-accroche">
+                        <span>Tendance 2024</span>
+                    </div>
+                    <div class="banner-item-title">
+                        <span>Collection</span>
+                        <span>Spring</span>
+                    </div>
+                    <div class="banner-item-accroche2">
+                        <span>30% de réduction</span>
+                    </div>
+                    <div class="banner-item-button">
+                        <button class="banner-item-btn">Acheter</button>
+                    </div>
+                </div>
+                <div class="banner-image">
+                    <img src="Chambre A Coucher.jpg" >
+                </div>
+                
+            </div>
+        </section>
+       
+
+    
+    <div class="service">
+        <ul >
+            <li class="lesservice"> 
+                <i class="las la-truck" ></i>
+                <span class="tous"><span class="livraison">Livraison gratuite</span> <br><span class="contenu">pour des achats de plus de 100DT</span></span>
+            </li>
+            <li class="lesservice" > 
+                <i class="las la-credit-card" ></i>
+                <span class="tous"><span class="livraison">paiement sécurisé </span><br><span class="contenu">Avec les moyens les plus populaire</span></span>
+            </li>
+            <li class="lesservice"> 
+                <i class="las la-hands-helping"></i>
+                <span class="tous"><span class="livraison">14 jours de retour</span> <br><span class="contenu">Retour garantie</span></span><br>
+            </li>
+            <li class="lesservice"> 
+                <i class="las la-headphones-alt" ></i>
+                <span class="tous"><span class="livraison">Asistance 24/24</span> <br><span class="contenu">Disponible 24/24</span></span><br>
+            </li>
+        </ul>
+    </div>
+    <section class="banner-ban2">
+        <div class="banner-ban2-img1">
+            <img src="Comment utiliser le blanc dans la déco du salon _ _ Shake My Blog.jpg">
+        </div>
+        <div class="banner-ban2-img2">
+            <img src="Projeto de conceito de Black Friday Sale _ Vetor Premium.jpg">
+        </div>
+    </section>
+    <section class="section-ban3">
+        <div class="section-ban3-title">
+            <h3>Nouvelle Arrivage</h3>
+            <p>Decouvrez nos nouvelles arrivages</p>
+        </div>
+        <div class="section-ban3-items">
+            <a href="mirroir.html" class="section-ban3-item">
+                <div class="section-ban3-item-img">
+                    <img src="Miroir Dore Salon.jpg">
+                    <span>New</span>
+                </div>
+                <div class="section-ban3-item-descrip">
+                <div class="section-ban3-item-descrip-commentr">
+                    <div>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <span class="section-ban3-item-descrip-commentr-text">Commentaires(4)</span>
+                </div>
+                <h4 class="section-ban3-item-descrip-title">Mirroir Dore Salon</h4>
+                <span class="section-ban3-item-descrip-price">60DT</span>
+            </div>
+            </a>
+            <a href="bougie.html" class="section-ban3-item">
+                <div class="section-ban3-item-img">
+                    <img src="Art De Bougie.jpg">
+                    <span>New</span>
+                </div>
+                <div class="section-ban3-item-descrip">
+                <div class="section-ban3-item-descrip-commentr">
+                    <div>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <span class="section-ban3-item-descrip-commentr-text">Commentaires(2)</span>
+                </div>
+                <h4 class="section-ban3-item-descrip-title">Aesthetic Candles</h4>
+                <span class="section-ban3-item-descrip-price">37DT</span>
+            </div>
+            </a>
+            <a href="moquette.html" class="section-ban3-item">
+                <div class="section-ban3-item-img">
+                    <img src="Moquette De Chambre.jpg">
+                    <span>New</span>
+                </div>
+                <div class="section-ban3-item-descrip">
+                <div class="section-ban3-item-descrip-commentr">
+                    <div>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <span class="section-ban3-item-descrip-commentr-text">Commentaires(0)</span>
+                </div>
+                <h4 class="section-ban3-item-descrip-title">Moquette De Chambre</h4>
+                <span class="section-ban3-item-descrip-price">120DT</span>
+            </div>
+            </a>
+            <a href="portfleur.html" class="section-ban3-item">
+                <div class="section-ban3-item-img">
+                    <img src="Pot De Fleur Interieur.jpg">
+                    <span>New</span>
+                </div>
+                <div class="section-ban3-item-descrip">
+                <div class="section-ban3-item-descrip-commentr">
+                    <div>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <span class="section-ban3-item-descrip-commentr-text">Commentaires(1)</span>
+                </div>
+                <h4 class="section-ban3-item-descrip-title">Pot De Fleur Interieur</h4>
+                <span class="section-ban3-item-descrip-price">80DT</span>
+            </div>
+            </a>
+        </div>
+    </section>
+    <section class="section-ban4">
+        <div class="section-ban4-info">
+            <div class="section-ban4-info-envel">
+                <i class="las la-envelope"></i>
+                <h3>Obtenez <br/> 20% de reduction</h3>
+                <p>rejoindre notre newsletter</p>
+                <div class="ection-ban4-infos-input">
+                    <input type="text"  placeholder="adresse E-mail" >
+                    <input type="submit" >
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-ban3">
+        <div class="section-ban3-title">
+            <h3>Tendance</h3>
+            <p>Decouvrez nos nouvelles arrivages</p>
+        </div>
+        <div class="section-ban3-items">
+            <a href="arbrelumineux.html" class="section-ban3-item">
+                <div class="section-ban3-item-img">
+                    <img src="Wopigh Arbres Lumineux LED, Illuminated Murale Interieur Vine Décoration,8 modes lumières des arbres,72 LEDs branchées en vigne éclairée pour coin mural, chambre à coucher(1 paquet).jpg">
+                </div>
+                <div class="section-ban3-item-descrip">
+                <div class="section-ban3-item-descrip-commentr">
+                    <div>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <span class="section-ban3-item-descrip-commentr-text">Commentaires(4)</span>
+                </div>
+                <h4 class="section-ban3-item-descrip-title">Arbres Lumineux</h4>
+                <span class="section-ban3-item-descrip-price">45DT</span>
+            </div>
+            </a>
+            <a href="decorationmurale.html" class="section-ban3-item">
+                <div class="section-ban3-item-img">
+                    <img src="Décoration Murale Salle À Manger.jpg">
+                </div>
+                <div class="section-ban3-item-descrip">
+                <div class="section-ban3-item-descrip-commentr">
+                    <div>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <span class="section-ban3-item-descrip-commentr-text">Commentaires(2)</span>
+                </div>
+                <h4 class="section-ban3-item-descrip-title">Décoration Murale Salle À Manger</h4>
+                <span class="section-ban3-item-descrip-price">60DT</span>
+            </div>
+            </a>
+            <a href="Bibliotheque.html" class="section-ban3-item">
+                <div class="section-ban3-item-img">
+                    <img src="Relooking Bibliotheque.jpg">
+                </div>
+                <div class="section-ban3-item-descrip">
+                <div class="section-ban3-item-descrip-commentr">
+                    <div>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <span class="section-ban3-item-descrip-commentr-text">Commentaires(0)</span>
+                </div>
+                <h4 class="section-ban3-item-descrip-title">Relooking Bibliotheque</h4>
+                <span class="section-ban3-item-descrip-price">420DT</span>
+            </div>
+            </a>
+            <a href="bougie.html" class="section-ban3-item">
+                <div class="section-ban3-item-img">
+                    <img src="Art De Bougie.jpg">
+                    <span>New</span>
+                </div>
+                <div class="section-ban3-item-descrip">
+                <div class="section-ban3-item-descrip-commentr">
+                    <div>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <span class="section-ban3-item-descrip-commentr-text">Commentaires(1)</span>
+                </div>
+                <h4 class="section-ban3-item-descrip-title">Art De Bougie</h4>
+                <span class="section-ban3-item-descrip-price">37DT</span>
+            </div>
+            </a>
+        </div>
+    </section>
+    <section class="section-ban5">
+         <div class="section-ban5-gauche">
+            <img src="Wish List.jpg" >
+            <span> 20% de réduction</span>
+         </div>
+         <div class="section-ban5-droit">
+            <img src="Peinture couleur taupe _ inspirations pour la chambre à coucher.jpg" >
+            <span> 30% de réduction</span>
+         </div>
+    </section>
+    <section class="section-ban6">
+        <div class="section-ban6-text">
+            <i class="las la-truck"></i>
+            <h4>Expedition rapide</h4>
+            <p>plus de 1000 produits prêt à être expedité pour vous </p>
+            <button>Acheter maintenant</button>
+        </div>
+    </section>
+    <section class="section-temoignage">
+        <div class="section-temoignage-title">
+            <h3>Temoignage</h3>
+            <p>Decouvrez ce que disent nos clients</p>
+        </div>
+        <div class="slider-contenu">
+            <div class="slider">
+                <div class="slide">
+                    <div class="slide-etoile">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <p class="slide-text">
+                        J'aimerais vous remercier infiniment de votre excellent travail et la rapidité du service!
+                        C'est très rare de nos jours d'avoir un service aussi impeccable que satisfaisant!!!!
+                        Merci encore! 
+                    </p>
+                    <div class="slide-name">
+                        <span>
+                            <i class="las la-arrow-right  "></i>
+                        </span>
+                        <h3>Kenza</h3>   
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-etoile">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <p class="slide-text">
+                        Très jolie lampe, elle rend parfaitement dans mon salon.
+                         Par contre, la livraison a pris un peu plus de temps que prévu.
+                         Mais le produit est bien conforme et fait son effet !
+                    </p>
+                    <div class="slide-name">
+                        <span>
+                            <i class="las la-arrow-right  "></i>
+                        </span>
+                        <h3>sarah</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-etoile">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <p class="slide-text">
+                        Le tapis est juste magnifique 
+                        La couleur correspond parfaitement à l'image.
+                        Le service client était aussi top. Super expérience d'achat
+                    </p>
+                    <div class="slide-name">
+                        <span>
+                            <i class="las la-arrow-right  "></i>
+                        </span>
+                        <h3>Emna</h3>   
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-etoile">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <p class="slide-text">
+                        Service impeccable et livraison rapide.
+                        J'ai commandé une chemise et
+                        elle est arrivée dans les délais annoncés. 
+                        Très satisfait de la qualité. Je reviendrai sûrement !
+                    </p>
+                    <div class="slide-name">
+                        <span>
+                            <i class="las la-arrow-right  "></i>
+                        </span>
+                        <h3>Yosr</h3>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-contenu">
+      <div class="footer-section">
+        <h4>Suivez-nous:</h4>
+        <div class="social-links">
+          <a href="#"><i class="lab la-instagram"></i>Instagram</a>
+          <a href="#"><i class="lab la-facebook"></i>Facebook</a>
+          <a href="#"><i class="lab la-twitter"></i>twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Décor Maison. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  
+
+
+    
+</body>
+</html>

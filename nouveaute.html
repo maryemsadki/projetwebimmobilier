@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Web</title>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-contenu">
+                <ul class="header-top-items">
+                    <li class="headder-top-item"><a href="">Contact</a></li>
+                    <li class="headder-top-item"><a href="">Support</a></li>
+                    <li class="headder-top-item"><a href="">Commentaire</a></li>
+                </ul>
+                <ul class="header-top-items">
+                    <li class="headder-top-item"> 
+                        <i class="las la-phone"></i>
+                        <span>+21627471285</span>
+                    </li>
+                    <li class="headder-top-item"> 
+                        <i class="las la-envelope"></i>
+                        <span>+maryemsadki22@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav-contenu">
+                <div class="nav-items" >
+                    <div class="nav-item-logo">
+                        <a href="">Logo</a>
+                    </div>
+                    <nav>
+                    <ul class="nav-items-lists">
+                        <li class="nav-items-list">
+                            <div class="dropdown">
+                                <span class="dropdown-text">Accueil</span><i class="las la-angle-down"></i>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Nouveaute.html">Nouveauté</a></li>
+                                    <li><a href="iconique.html">iconiques</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-items-list">
+                            <div class="dropdown">
+                                <span class="dropdown-text">Catégories</span><i class="las la-angle-down"></i>
+                                <ul class="dropdown-menu">
+                                    <li><a href="decoration.html">décoration</a></li>
+                                    <li><a href="rangement.html">rangement</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-items-list">
+                            <div class="dropdown">
+                                <span class="dropdown-text">Notre univers</span><i class="las la-angle-down"></i>
+                                <ul class="dropdown-menu">
+                                    <li class="us"><a href="nous.html">à propos de nous</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-items-list">
+                            <div class="dropdown">
+                            <span class="dropdown-text">Aide et Service</span><i class="las la-angle-down"></i>
+                            <ul class="dropdown-menu">
+                                <li class="us"><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+                <div class="nav-icons">
+                    <input type="text" placeholder="Recherche...">
+                    <button class="btnLogin-popup">
+                            <i class="las la-sign-in-alt"></i>
+                            <span>Connexions</span>
+                        </a>
+                    </button>
+                    <a href="panier.html">
+                        <i class="las la-shopping-cart"></i>
+                    </a>
+                    <button>
+                        <i class="las la-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper" style="display: none;">
+        <span class="icon-close">
+            <i>x</i>
+        </span>
+        <!-- Formulaire de connexion -->
+        <div class="form-box login">
+            <h2>Connexion</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="las la-envelope"></i>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="las la-lock"></i>
+                    </span>
+                    <input type="password" required>
+                    <label>Mot de passe</label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">Se souvenir de moi
+                    </label>
+                    <a href="#">Mot de passe oublié</a>
+                </div>
+                <button type="submit" class="btn">Connexion</button>
+                <div class="login-register">
+                    <p>Vous n'avez pas de compte ? <a href="#" id="show-register">S'inscrire</a></p>
+                </div>
+            </form>
+        </div>
+        <!-- Formulaire d'enregistrement -->
+        <div class="form-box register">
+            <h2>S'inscrire</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="text" required>
+                    <label>Nom d'utilisateur</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="las la-envelope"></i>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="las la-lock"></i>
+                    </span>
+                    <input type="password" required>
+                    <label>Mot de passe</label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">J'accepte les termes et conditions
+                    </label>
+                </div>
+                <button type="submit" class="btn">S'inscrire</button>
+                <div class="login-register">
+                    <p>Vous avez déjà un compte ? <a href="#" id="show-login">Connexion</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script> 
+    <section class="products">
+        <div class="container">
+            <h2>Nouvelle collection</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="image_be80783b-10e5-4ee7-80e4-a711a88bc024_500x500_crop_center.jpg" alt="Produit 1">
+                    <div class="etoile">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <br>
+                    <span>commentaires(1)</span>
+                    <h3>Miroir en métal noir </h3>
+                    <p class="price">450DT</p>
+                    <a href="Mirroir2.html" class="test">Voir le produit</a>
+                </div>
+                <div class="product">
+                    <img src="image_95505258-b7cf-4242-b030-ab2c40b588d1_500x500_crop_center.jpg" alt="Produit 1">
+                    <div class="etoile">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <br>
+                    <span>commentaires(2)</span>
+                    <h3>Etagère murale ronde</h3>
+                    <p class="price">79DT</p>
+                    <a href="Etagere.html" class="test">Voir le produit</a>
+                </div>
+                <div class="product">
+                    <img src="image_1de04cbb-3b31-4890-b6cd-26b185876752_500x500_crop_center.jpg" alt="Produit 1">
+                    <div class="etoile">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <br>
+                    <span>commentaires(5)</span>
+                    <h3>Bonbonne en noir</h3>
+                    <p class="price">45DT</p>
+                    <a href="bonbonne.html" class="test">Voir le produit</a>
+                </div>
+                <div class="product">
+                    <img src="image_f0eba0ea-7330-43bd-ba48-48531743b2de_500x500_crop_center.jpg" alt="Produit 1">
+                    <div class="etoile">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div><br>
+                    <span>commentaires(0)</span>
+                    <h3>Tapis de couloir</h3>
+                    <p class="price">60DT</p>
+                    <a href="tapis.html" class="test">Voir le produit</a>
+                </div>
+            </div>
+            <div class="product-list">
+                <div class="product">
+                    <img src="Miroir Dore Salon.jpg" alt="Produit 1">
+                    <div class="etoile">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <br>
+                    <span>commentaires(4)</span>
+                    <h3>Miroir Dore Salon </h3>
+                    <p class="price">60DT</p>
+                    <a href="mirroir.html" class="test">Voir le produit</a>
+                </div>
+                <div class="product">
+                    <img src="Art De Bougie.jpg" alt="Produit 1">
+                    <div class="etoile">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <br>
+                    <span>commentaires(2)</span>
+                    <h3>Aesthetic Candles</h3>
+                    <p class="price">37DT</p>
+                    <a href="bougie.html" class="test">Voir le produit</a>
+                </div>
+                <div class="product">
+                    <img src="Moquette De Chambre.jpg" alt="Produit 1">
+                    <div class="etoile">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <br>
+                    <span>commentaires(0)</span>
+                    <h3>Moquette de chambre </h3>
+                    <p class="price">120DT</p>
+                    <a href="moquette.html" class="test">Voir le produit</a>
+                </div>
+                <div class="product">
+                    <img src="Pot De Fleur Interieur.jpg" alt="Produit 1">
+                    <div class="etoile">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <br>
+                    <span>commentaires(1)</span>
+                    <h3>Pot de fleur Interieur</h3>
+                    <p class="price">80DT</p>
+                    <a href="portfleur.html" class="test">Voir le produit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-contenu">
+          <div class="footer-section">
+            <h4>Suivez-nous:</h4>
+            <div class="social-links">
+              <a href="#"><i class="lab la-instagram"></i>Instagram</a>
+              <a href="#"><i class="lab la-facebook"></i>Facebook</a>
+              <a href="#"><i class="lab la-twitter"></i>twitter</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Décor Maison. Tous droits réservés.</p>
+        </div>
+      </footer>
+    
+</body>
